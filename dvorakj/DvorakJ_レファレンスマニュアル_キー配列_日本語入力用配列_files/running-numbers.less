@@ -1,0 +1,44 @@
+// // CSS で 連番つき見出し をつくる: in the teksea
+// // http://blog.ra-labo.com/2011/01/css-0c9c.html
+
+// /* カウンターの初期化 */
+// body {
+//   counter-reset: chapter;
+//   counter-reset: section;
+//   counter-reset: subsection;
+// }
+
+// /* ブログエントリー タイトル で、chapter リセット */
+// h1 {
+//   counter-reset: chapter;
+// }
+
+// /* h2 : チャプター */
+// h2:before {
+//   font-size: 100%;
+//   content: counter(chapter) ". ";
+//   counter-increment: chapter;
+// }
+// h2 {
+//   counter-reset: section;
+// }
+
+// /* h3 : セクション */
+// h3:before {
+//     font-size: 90%;
+//   content: counter(chapter) "." counter(section) ". ";
+//   counter-increment: section;
+// }
+// h3 {
+//   counter-reset: subsection;
+// }
+
+// /* h4 : サブセクション */
+// h4:before {
+//   font-size: 80%;
+//   content: counter(chapter) "." counter(section) "." counter(subsection) ". ";
+//   counter-increment: subsection;
+// }
+// h4 {
+// }
+
